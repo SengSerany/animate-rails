@@ -1,2 +1,62 @@
-<h1>LandingPage#index</h1>
-<p>Find me in app/views/landing_page/index.html.erb</p>
+<br/><br/>
+<div class="container">
+	<div class="top-content col-12">	
+
+		<div class="row">
+			<div class="col-6">
+				<div class="d-flex justify-content-center">
+					<h1 class="text-center  animated fadeInDown">Marre de prendre<br/>2h pour faire un CV?</h1>
+				</div>
+				<div class="d-flex justify-content-center">
+					<p class="text-center animated fadeIn">Avec Cv&GO réalise-les en seulement <strong>15 minutes!</strong></p>
+				</div>
+		<div class="row">
+			<div class="col-6 animated fadeInUp">
+				<div class="d-flex justify-content-center">
+					<%= image_tag "data.png", id: "img-data", class:"animated pulse slow float-icon" %>
+				</div>
+				<div class="text-img d-flex justify-content-center">
+					<p class="text-center">Charge et<br/> enregistre tes informations</p>
+				</div>
+			</div>
+			<div class="col-6 delay-1 animated fadeInUp">
+				<div class="d-flex justify-content-center">
+					<%= image_tag "cv.png", id: "img-data", class:"animated pulse slow float-icon-2" %>
+				</div>
+				<div class="t2 text-img d-flex justify-content-center">
+					<p class="text-center">Choisis ton modèle,<br/>remplis automatiquement<br/>avec tes informations<br/></p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="col-6">
+			<div class="form">
+				<div class="d-flex justify-content-center">
+					<h3>Inscris-toi !</h3>
+				</div>
+
+				<%= form_for @landingPage do |f| %>
+				<div class="form-group">
+        			<%= f.label :email, "Email", class: "text-white" %><br />
+        			<%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+       			</div>
+       			<div class="form-group">
+		        	<%= f.label :password, class: "text-white" %>
+		        <% if @minimum_password_length %>
+		        <em>(<%= @minimum_password_length %> characters minimum)</em>
+		        	<% end %><br />
+		        	<%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+		        </div>
+			       <div class="form-group">
+		        	<%= f.label :password_confirmation, class: "text-white" %><br />
+		        	<%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+		        </div>
+			        <div class="actions mt-5">
+			       	<%= f.submit "Sign up", class: "btn btn-lg btn-warning btn-block text-white" %>
+		        </div>
+       			<% end %>
+				</div>
+			</div></div>
+		</div>
+	</div>
+</div>

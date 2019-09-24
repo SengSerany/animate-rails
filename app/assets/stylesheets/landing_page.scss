@@ -1,3 +1,73 @@
 // Place all the styles related to the LandingPage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-image: url(working-at-desk.jpg);
+	background-size: cover;
+}
+
+.top-content {
+	background-color: rgba(255,255,255,.2);
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.top-content h1 {
+	font-family: Butler Stencil XL;
+	color: #423FFF;
+	text-shadow: 2px 0 0 white;
+}
+
+.top-content p {
+	font-family: Butler Stencil L;
+	color: grey;
+	animation-duration: 3s;
+}
+
+.top-content strong {
+	color:  #423FFF;
+}
+
+.float-icon {
+	width: 150px;
+}
+
+.float-icon-2 {
+	width: 110px;
+	margin-top: 20px;
+}
+
+#img-data {
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+}
+
+.delay-1 {
+	animation-delay: 0.1s;
+}
+
+.top-content .text-img p{
+	background-color: rgba(255,255,255,.5);
+	border-radius: 15px;
+	padding: 5px;
+	color: black;
+	font-family: 'bebas_neueregular';
+}
+
+.t2 {
+	margin-top: 20px;
+}
+
+.form {
+	background-image: radial-gradient(circle, #423fff, #3b3cdb, #3537b7, #313295, #2d2c73);
+	border-radius: 15px;
+	padding: 15px;
+	margin-left: 80px;
+}
+
+.form h3 {
+	font-family: Butler Stencil XL;
+	color: white;
+	padding-top: 10px;
+}
